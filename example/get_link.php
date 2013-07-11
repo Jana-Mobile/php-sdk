@@ -3,10 +3,10 @@
 require_once "../jana-php-sdk/jana.php";
 
 $secretKey = '293af117b8f14232ad86099f730629bc';
-$customerId = 'gta2i';
+$clientId = 'gta2i';
 $offerId = 'irl_mim6lf';
 
-$jana = new Jana($customerId, $secretKey, 'http://localhost:8082/api/');
+$jana = new Jana($clientId, $secretKey);
 
 $response = $jana->getJIALink($offerId);
 
